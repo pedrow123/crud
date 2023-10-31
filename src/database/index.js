@@ -1,10 +1,10 @@
 const Sequelize = require('sequelize');
 const configDB = require('../config/database')
 
-const Locadora = require('../models/locadora')
+const Veiculo = require('../models/veiculo')
 
 const connection = new Sequelize(configDB)
 
-Locadora.init(connection)
+Veiculo.init(connection)
 
 module.exports = connection

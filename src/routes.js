@@ -1,14 +1,15 @@
 const {Router} = require('express')
-const Locadora = require('./models/locadora')
+
+const VeiculoController = require('./controller/VeiculoController')
 
 const router = Router()
 
-router.post('/', async (req, res) => {
-    const { locadora, modelo, marca, ano, motor, portas, cambio, ar_condicionado } = req.body
+router.post('/veiculos', VeiculoController.createVeiculo)
+router.put('/veiculos/:id', VeiculoController.updateVeiculo)
+router.get('/veiculos', VeiculoController.listVeiculos)
+router.delete('/veiculos/:id', VeiculoController.deleteVeiculo)
+router.get('/veiculos/:id', VeiculoController.getVeiculoById)
 
-    const loc = await Locadora.create({locadora, modelo, marca, ano, motor, portas, cambio, ar_condicionado})
 
-    res.json({loc})
-})
 
 module.exports = router

@@ -3,7 +3,7 @@ module.exports = {
     host: 'localhost',
     username: 'root',
     password: '',
-    database: 'locadora-crud',
+    database: 'veiculos-crud-new',
     define: {
         timestamp: true,
         underscored: true,
