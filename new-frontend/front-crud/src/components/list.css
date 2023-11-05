@@ -1,0 +1,10 @@
+.table {
+    width: 100%;
+}
+
+.btn-action {
+    width: 100px;
+    text-align: center; 
+    margin-right: 10px;
+    font-size: 16px;
+  }
