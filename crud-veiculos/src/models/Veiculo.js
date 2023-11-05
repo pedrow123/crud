@@ -37,6 +37,6 @@ const Firm = connection.define('veiculos', {
 
 })
 
-connection.sync({force: false})
+connection.sync({force: true})
 
 module.exports = Firm;
