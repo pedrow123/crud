@@ -33,6 +33,7 @@ const ListById = (props) => {
     return (
       <div className="container">
         <h2>Detalhes do Veículo</h2>
+        <p>Id: {veiculo[0].id}</p>
         <p>Locadora: {veiculo[0].locadora}</p>
         <p>Marca: {veiculo[0].marca}</p>
         <p>Modelo: {veiculo[0].modelo}</p>
@@ -41,6 +42,8 @@ const ListById = (props) => {
         <p>Portas: {veiculo[0].portas}</p>
         <p>Câmbio: {veiculo[0].cambio}</p>
         <p>Ar Condicionado: {veiculo[0].ar_condicionado ? "Sim" : "Não"}</p>
+        <p>Criado: {veiculo[0].createdAt} </p>
+        <p>Atualizado: {veiculo[0].updatedAt} </p>
         <Link to={`/update/${id}`} className="btn">
           Atualizar
         </Link>

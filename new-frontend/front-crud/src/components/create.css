@@ -4,13 +4,13 @@ form {
     align-items: center;
   }
   
-  .form-group {
+.form-group {
     margin: 10px;
     display: flex;
     flex-direction: column;
   }
   
-  label {
+label {
     font-weight: bold;
   }
   
